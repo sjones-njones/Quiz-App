@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box; 
+}
+
+#start, #again, #next, #initials{
+  display: none;
+  font-weight: bold;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#start{
+  display: block;
+}
+ #question-text{ 
+  /* display: none; */
+padding-top: 10px;
+}
+/* #answer-btns{
+  display: none; */
+/* } */ 
+#correct {
+  display: none;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#timeup {
+  display: none;
+  font-weight: bold;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#instructions{
+  display: block;
+  font-size: 16px;
+  color:white;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+
+
+.container {
+  display: block;
+  background: lightslategray;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.container h1{
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+justify-content: center;
+}
+
+body {
+  background-color: white;
+}
+
+.quiz{
+  padding: 20px 0;
+}
+
+
+
+.btn {
+  background: white;
+  color: darkslategrey;
+  font-size: 14px;
+  font-weight: bold;
+  width: 95%;
+  border: 1px solid darkslategray;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#next {
+  display: none;
+  font-weight: bold;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.correct {
+  background: black;
+  color: white;
+  
+}
+.incorrect {
+background: red; 
+ } 
+
+ #incorrect {
+  display: none;
+  font-size: 16px;
+  font-weight: bolder;
+  padding-top: 10px;
+  text-align: center;
+}
+#correct {
+  display: none;
+  font-size: 16px;
+  font-weight: bolder;
+  padding-top: 10px;
+  text-align: center;
+} 
+#question-text {
+  font-size: 18px;
+  color: black;
+  font-weight: bolder;
+}
+
+btn:disabled{
+  cursor: no-drop;
+}
+
+.btn:hover:not([disabled]){
+  background: black;
+  color: white
+}

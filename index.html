@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Chemistry Quiz</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Chemistry Quiz</h1>
+    <div class="quiz">
+      <div id="timeup">Time is up!</div>
+      <h1 class="time" style="text-align:center; font-size: 25px; font-weight: 600;"></h1>
+
+     <h2 id="instructions">Answer the questions as quickly as possible, but be careful, a wrong answer will take away 15 seconds from the clock!</h2>
+      <h2 id="question-text">Question goes here</h2>
+      <div id="answer-btns">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+       <div id="correct">Great Job!</div>
+      <div id="incorrect">Better Luck Next Time!</div>
+      <button id="next">Next</button>
+      <button id="start">Start</button>
+      <button id="again">Play Again</button>
+      <form id="initials">
+        <div>
+          <label for="initials">Enter Your Initials</label>
+          <input id="initials" type="text" name="text" />
+        </div>
+        <div>
+          <input type="submit" value="Enter" />
+        </div>
+      </form>
+          </div>
+    <script src="./Assets/js/script.js"></script>
+  </div>
+</body>
+
+</html>
