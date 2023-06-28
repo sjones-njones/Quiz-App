@@ -54,10 +54,23 @@ input {
   vertical-align: middle;
   width: 100%;
 }
+#highest, #finalScore {
+  display: "none";
+  color:black;
+  background-color: white;
+  border: black;
+  border-radius: 4px;
 
+}
+highScoresList{
+  list-style-type: none;
+}
 input:hover {
   background-color: #e8eaed;
 }
+/* .list{
+  display: none;
+} */
 
 #enter{
   display: none;

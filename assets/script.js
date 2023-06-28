@@ -71,7 +71,7 @@ var timeEl = document.querySelector(".time");
   }, 1000);
   instructionsEl.style.display = "none";
   questionIndex = 0;
-  score = 0;
+  // score = 0;
   startEl.style.display = "none";
   nextBtn.style.display = "block";
   showQuestions();
@@ -160,8 +160,11 @@ function showScore(){
   finalScoreEl.style.display = "none";
   // finalScoreEl.textContent = percentEl
 }
+var highestEl = document.getElementById("highest");
+var finalScoreEl = document.getElementById("finalScore");
 
-var lastHighScore = localStorage.getItem("lastHighScore");
+var highScoresListEl = document.getElementById("highScoresList");
+// var lastHighScore = localStorage.getItem("lastHighScore");
 var highscore = JSON.parse(localStorage.getItem ("highscore")) || [];
 
 initialsEl.addEventListener("keyup", () => {
@@ -169,20 +172,28 @@ initialsEl.addEventListener("keyup", () => {
   enterEl.disabled = !initialsEl.value;
   // localStorage.setItem("lastInitials", initialsEl)
 });
-  var percentEl = 100 * score/questions.length;
-  enterEl.addEventListener("click", function(event) {
-    event.preventDefault();
-    localStorage.setItem("lastHighScore", percentEl);
+enterEl.addEventListener("click", function(event) {
+  event.preventDefault();
+  var percentEl = (100 * score)/questions.length;
+    // localStorage.setItem("lastHighScore", percentEl);
     var scoreName = {
-      scores: lastHighScore,
+      scores: percentEl,
       name: initialsEl.value,
     };
     highscore.push(scoreName);
+    console.log(highscore, score, questions.length);
     enterEl.style.display = "none";
     initialsEl.style.display = "none";
     againEl.style.display = "block";
     localStorage.setItem("highscore", JSON.stringify(highscore));
-});
+    highestEl.style.display = "block";
+    highScoresListEl.innerHTML = highscore.map(function mkList() {
+      return `<li class="high-score">${scoreName.name} - ${scoreName.scores}</li>`;
+    })
+    .join("");
+  });
+
+
 
 againEl.addEventListener("click", function(){
   nextBtn.style.display = "none";
@@ -210,3 +221,4 @@ nextBtn.addEventListener("click", ()=> {
   }
 });
 
+mkList();
