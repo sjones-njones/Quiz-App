@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
   <title>Chemistry Quiz</title>
 </head>
 
@@ -28,18 +28,29 @@
       <div id="incorrect">Better Luck Next Time!</div>
       <button id="next">Next</button>
       <button id="start">Start</button>
-      <button id="again">Play Again</button>
-      <form id="initials">
-        <div>
-          <label for="initials">Enter Your Initials</label>
-          <input id="initials" type="text" name="text" />
-        </div>
-        <div>
-          <input type="submit" value="Enter" />
-        </div>
-      </form>
+      <div>
+        <h2 id="finalScore">0</h2>
+        <form>
+          <input type = "text" name="initials" id="initials" placeholder="initials"/>
+          <button type="submit" class="btn" id="enter"          disabled>
+          Enter</button>
+        </form>
+        <!-- <form method="POST">
+          <div class="initials">
+            <label for="initials">Type Your Initials Here:</label>
+            <input type="text" name="initials" id="initials"/>
           </div>
-    <script src="./Assets/js/script.js"></script>
+          <div id="msg"></div>
+          <button id="enter">Enter</button>
+        </form> -->
+      </div>
+      <button id="again">Play Again</button>
+      <div class="card">
+        <h2>Last Player:</h2>
+        <p><strong>Initials:</strong> <span id="user-initials"></span></p>
+        <p><strong>Password:</strong> <span id="user-score"></span></p>
+      </div>
+    <script src="./Assets/script.js"></script>
   </div>
 </body>
 
