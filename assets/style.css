@@ -62,15 +62,20 @@ input {
   border-radius: 4px;
 
 }
-highScoresList{
+#highScoresList{
   list-style-type: none;
 }
+.high-score{
+  padding: 2px;
+  font-weight: 18px;
+  }
 input:hover {
   background-color: #e8eaed;
 }
-/* .list{
-  display: none;
-} */
+.list{
+max-width: 90%;
+justify-content: center;
+} 
 
 #enter{
   display: none;
