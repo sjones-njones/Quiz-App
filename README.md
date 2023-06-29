@@ -10,13 +10,6 @@ https://sjones-njones.github.io/Quiz-App/
 
 https://github.com/sjones-njones/Quiz-App
 
-![Alt text](image.png)
-![Alt text](image-1.png)
-![Alt text](image-2.png)
-![Alt text](image-3.png)
-![Alt text](image-4.png)
-![Alt text](image-5.png)
-![Alt text](image-6.png)
 
 ## Credits
 
