@@ -1,11 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  box-sizing: border-box; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
-#start, #again, #next{
+#start,
+#again,
+#next {
   display: none;
   font-weight: bold;
   width: 150px;
@@ -15,18 +17,21 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
 .card {
   display: none;
 }
-.initials{
+
+.initials {
   font-weight: bold;
   width: 300px;
   border: 0;
   padding: 10px;
   margin: 20px auto 0;
   border-radius: 4px;
-  cursor: pointer; 
+  cursor: pointer;
 }
+
 .input-group {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -54,30 +59,36 @@ input {
   vertical-align: middle;
   width: 100%;
 }
-#highest, #finalScore {
+
+#highest,
+#finalScore {
   display: "none";
-  color:black;
+  color: black;
   background-color: white;
   border: black;
   border-radius: 4px;
 
 }
-#highScoresList{
+
+#highScoresList {
   list-style-type: none;
 }
-.high-score{
+
+.high-score {
   padding: 2px;
   font-weight: 18px;
-  }
+}
+
 input:hover {
   background-color: #e8eaed;
 }
-.list{
-max-width: 90%;
-justify-content: center;
-} 
 
-#enter{
+.list {
+  max-width: 90%;
+  justify-content: center;
+}
+
+#enter {
   display: none;
   font-weight: bold;
   width: 150px;
@@ -87,24 +98,25 @@ justify-content: center;
   border-radius: 4px;
   cursor: pointer;
 }
-#finalScore{
+
+#finalScore {
   display: none;
 }
-#start{
+
+#start {
   display: block;
 }
- #question-text{ 
-  /* display: none; */
-padding-top: 10px;
+
+#question-text {
+  padding-top: 10px;
 }
-/* #answer-btns{
-  display: none; */
-/* } */ 
+
 #correct {
   display: none;
   font-size: 18px;
   font-weight: bolder;
 }
+
 #timeup {
   display: none;
   font-weight: bold;
@@ -117,15 +129,13 @@ padding-top: 10px;
   font-size: 18px;
 }
 
-#instructions{
+#instructions {
   display: block;
   font-size: 16px;
-  color:white;
+  color: white;
   font-weight: 500;
   padding-top: 20px;
 }
-
-
 
 .container {
   display: block;
@@ -137,24 +147,22 @@ padding-top: 10px;
   padding: 30px;
 }
 
-.container h1{
+.container h1 {
   font-size: 25px;
   color: white;
   font-weight: 600;
   border-bottom: 1px solid #333;
   padding-bottom: 20px;
-justify-content: center;
+  justify-content: center;
 }
 
 body {
   background-color: white;
 }
 
-.quiz{
+.quiz {
   padding: 20px 0;
 }
-
-
 
 .btn {
   background: white;
@@ -185,37 +193,40 @@ body {
 .correct {
   background: black;
   color: white;
-  
-}
-.incorrect {
-background: red; 
- } 
 
- #incorrect {
+}
+
+.incorrect {
+  background: red;
+}
+
+#incorrect {
   display: none;
   font-size: 16px;
   font-weight: bolder;
   padding-top: 10px;
   text-align: center;
 }
+
 #correct {
   display: none;
   font-size: 16px;
   font-weight: bolder;
   padding-top: 10px;
   text-align: center;
-} 
+}
+
 #question-text {
   font-size: 18px;
   color: black;
   font-weight: bolder;
 }
 
-btn:disabled{
+btn:disabled {
   cursor: no-drop;
 }
 
-.btn:hover:not([disabled]){
+.btn:hover:not([disabled]) {
   background: black;
   color: white
 }
