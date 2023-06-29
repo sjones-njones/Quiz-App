@@ -191,9 +191,13 @@ mkListfor();
 
 });
   function mkListfor(){
+
     for (let i=0; i < highscore.length; i++){
       var listItem = document.createElement("li");
-      listItem.innerHTML = highscore[i];
+    console.log(highscore[i].scores);
+    console.log(highscore[i].name);
+
+    listItem.innerHTML = "Initials: " + highscore[i].name + "               &nbsp                 " + "Score: " + highscore[i].scores + "%";
       document.getElementById("highScoresList").appendChild(listItem);
   }
   // highScoresListEl.innerHTML = highscore.map(function mkList() {
