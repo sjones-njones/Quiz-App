@@ -175,24 +175,31 @@ initialsEl.addEventListener("keyup", () => {
 enterEl.addEventListener("click", function(event) {
   event.preventDefault();
   var percentEl = (100 * score)/questions.length;
-    // localStorage.setItem("lastHighScore", percentEl);
-    var scoreName = {
-      scores: percentEl,
-      name: initialsEl.value,
-    };
-    highscore.push(scoreName);
-    console.log(highscore, score, questions.length);
-    enterEl.style.display = "none";
-    initialsEl.style.display = "none";
-    againEl.style.display = "block";
-    localStorage.setItem("highscore", JSON.stringify(highscore));
-    highestEl.style.display = "block";
-    highScoresListEl.innerHTML = highscore.map(function mkList() {
-      return `<li class="high-score">${scoreName.name} - ${scoreName.scores}</li>`;
-    })
-    .join("");
-  });
+  // localStorage.setItem("lastHighScore", percentEl);
+  var scoreName = {
+    scores: percentEl,
+    name: initialsEl.value,
+  };
+  highscore.push(scoreName);
+  // console.log(highscore, score, questions.length);
+  enterEl.style.display = "none";
+  initialsEl.style.display = "none";
+  againEl.style.display = "block";
+  localStorage.setItem("highscore", JSON.stringify(highscore));
+  highestEl.style.display = "block";
+mkListfor();
 
+});
+  function mkListfor(){
+    for (let i=0; i < highscore.length; i++){
+      var listItem = document.createElement("li");
+      listItem.innerHTML = highscore[i];
+      document.getElementById("highScoresList").appendChild(listItem);
+  }
+  // highScoresListEl.innerHTML = highscore.map(function mkList() {
+  //   return `<li class="high-score">${scoreName.name} - ${scoreName.scores}</li>`;
+  }
+  // .join("");
 
 
 againEl.addEventListener("click", function(){
@@ -220,5 +227,3 @@ nextBtn.addEventListener("click", ()=> {
     // addListenerStart();
   }
 });
-
-mkList();
